@@ -1,4 +1,4 @@
-f = open("d:/Users/Robert/Documents/GitHub/Rvdb/AoC2021/aoc2021/dag-1/1.txt", "r")
+f = open("d:/Users/Robert/Documents/GitHub/Rvdb/AoC2021/aoc2021/dag-1/1-1.txt", "r")
 i = 0
 incr = 0
 decr = 0
