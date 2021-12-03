@@ -1,5 +1,6 @@
-# f = open("/Users/Breee02/Documents/GitHub/aoc2021/day-2/2-1.txt", "r")
-f = open("d:/Users/Robert/Documents/GitHub/Rvdb/AoC2021/aoc2021/day-3/3-1.txt", "r")
+f = open("/Users/Breee02/Documents/GitHub/aoc2021/day-3/3-1.txt", "r")
+# f = open("/Users/Breee02/Documents/GitHub/aoc2021/day-3/test1.txt", "r")
+#f = open("d:/Users/Robert/Documents/GitHub/Rvdb/AoC2021/aoc2021/day-3/3-1.txt", "r")
 m=[]
 for x in f:
     m.append(x)
@@ -23,18 +24,22 @@ for i in range(0, len(x)):
         else:
             print ("geen 0 of 1")
 
-    if one > zero:
-        epsilon += pow(2, powerof2 - i)
+    if one < zero:
+        epsilon += pow(2, powerof2 -1- i)
         espilon_s += "1"
         gamma_s += "0"
-    elif one < zero:
+    elif one > zero:
         espilon_s += "0"
         gamma_s += "1"
-        gamma +=  pow(2, powerof2 - i )
+        gamma +=  pow(2, powerof2-1- i )
     else:
         print("Hmmm, that should not happen!")
 
-print ("epsilan: %d"% epsilon)
-print ("gamma  : %d"% gamma )
+print ("epsilon: %d"% epsilon)
+print ("epsilon string")
+print (espilon_s)
+print ("gamma  : %d"% gamma)
+print ("gamma string")
+print (gamma_s)
 print ("power consumption: %d"% (gamma * epsilon))
 f.close()
