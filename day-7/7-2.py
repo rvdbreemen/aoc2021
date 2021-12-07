@@ -15,9 +15,19 @@ for x in range(0, max_value):
     d=0
     dl=[]
     for y in m:
-        d += abs(y-x)
-        dl.append(abs(y-x))
+        e = 0
+        if x>y:
+            for i in range(y, x):
+                e += 1
+                d += e
+        else:
+            for i in range(x, y):
+                e += 1
+                d += e
     o.append(d)
     t+=1
-    
+    print(x)
+
+print ("Zoek minimale waarde")
 print(min(o))
+print ("Klaar!")
