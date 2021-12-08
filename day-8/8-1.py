@@ -12,6 +12,20 @@ for x in f:
     
 print("aantal: %d" % len(a))
 
+import numpy as np
 
+a = np.zeros((8),  dtype = int)
+print(a)
+
+for x in b:
+    for i in range(0, len(x)):
+        s = x[i]
+        c = len(s)
+        a[c] += 1
+        print(s, c)
+    print (x, a)
+
+s = a[0] + a[3] + a[6] + a[7]
+print ("Anwser: %d" % (s))
     
-print(min(o))
+    
