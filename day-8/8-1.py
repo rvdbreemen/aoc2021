@@ -1,6 +1,6 @@
 #f = open("/Users/Breee02/Documents/GitHub/aoc2021/day-8/8-1.txt", "r")
-#f = open("/Users/Breee02/Documents/GitHub/aoc2021/day-8/test.txt", "r")
-f = open("d:/Users/Robert/Documents/GitHub/Rvdb/AoC2021/aoc2021/day-8/8-1.txt", "r")
+f = open("/Users/Breee02/Documents/GitHub/aoc2021/day-8/test.txt", "r")
+#f = open("d:/Users/Robert/Documents/GitHub/Rvdb/AoC2021/aoc2021/day-8/8-1.txt", "r")
 #f = open("d:/Users/Robert/Documents/GitHub/Rvdb/AoC2021/aoc2021/day-8/test.txt", "r")
 m=[]
 a=[]
